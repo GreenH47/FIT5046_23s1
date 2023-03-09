@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!-- user input area -->
+    <EditText
+        android:id="@+id/editMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/editMessage"
+        android:inputType="text" />
+    <!-- You can change the inputType to
+    “phone” or "textPassword" to
+    facilitate data entry according to its
+    type -->
+
+    <!-- reverse button -->
+    <Button
+        android:id="@+id/reverse_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="REVERSE" />
+
+    <!-- claer button -->
+    <Button
+        android:id="@+id/clear_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CLAER" />
+</LinearLayout>
+
