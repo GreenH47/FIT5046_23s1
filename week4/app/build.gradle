@@ -1,0 +1,58 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.example.fragmentjava'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.example.fragmentjava"
+        minSdk 21
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    // This block enables specific build features
+    buildFeatures {
+        // This line enables the View Binding feature for the application
+        viewBinding true
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.6.0'
+    // This line imports the AppCompat library
+    implementation 'com.google.android.material:material:1.7.0'
+    // This line imports the Material Design Library
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    // This line imports the ConstraintLayout library
+    implementation 'androidx.fragment:fragment:1.5.5'
+    // This line imports the AndroidX Fragment library
+    implementation 'androidx.lifecycle:lifecycle-viewmodel:2.5.1'
+    // This line imports the ViewModel component of the Android Lifecycle library
+    implementation 'androidx.lifecycle:lifecycle-livedata:2.5.1'
+    // This line imports the LiveData component of the Android Lifecycle library
+    testImplementation 'junit:junit:4.13.2'
+    // This line imports the JUnit testing framework for unit testing
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    // This line imports the JUnit library for instrumentation testing
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    // This line imports the Espresso library for UI testing
+}
