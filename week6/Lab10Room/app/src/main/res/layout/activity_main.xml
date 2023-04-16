@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Text Input Layout for ID -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/id_textField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Id">
+
+        <!-- Input to get ID -->
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Text Input Layout for Name -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/name_textField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name">
+
+        <!-- Input to get Name -->
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Text Input Layout for Surname -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/surname_textField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Surname">
+
+        <!-- Input to get Surname -->
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Text Input Layout for Salary -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/salary_textField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Salary">
+
+        <!-- Input to get Salary -->
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Button to add data to Database-->
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add to Database" />
+
+    <!-- TextView to display added data -->
+    <TextView
+        android:id="@+id/textView_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Button to delete data from Database-->
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete Data" />
+
+    <!-- TextView to display deleted data information -->
+    <TextView
+        android:id="@+id/textView_delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Button to update data in Database-->
+    <Button
+        android:id="@+id/updateButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update Data" />
+
+    <!-- TextView to display updated data information -->
+    <TextView
+        android:id="@+id/textView_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Button to clear all the entries -->
+    <Button
+        android:id="@+id/clearButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Clear entries" />
+
+    <!-- TextView to display read data information from database -->
+    <TextView
+        android:id="@+id/textView_read"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" />
+</LinearLayout>
