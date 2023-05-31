@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- homepage layout which have 6 buttons redirect to dashboard;Map;profile;Diet Log;Workout Log;Social sharing fuction-->
+    <LinearLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!-- Map button filling parent width and wrapping content height -->
+        <Button
+            android:id="@+id/mapButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Map"
+            />
+        <!-- Dashboard button filling parent width and wrapping content height -->
+        <Button
+            android:id="@+id/dashboardButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dashboard"
+            />
+        <!-- Diet Log button filling parent width and wrapping content height -->
+        <Button
+            android:id="@+id/dietLogButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Diet Log"
+            />
+        <!-- Workout Log button filling parent width and wrapping content height -->
+        <Button
+            android:id="@+id/workoutLogButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Workout Log"
+            />
+        <!-- Profile button filling parent width and wrapping content height -->
+        <Button
+            android:id="@+id/profileButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            />
+        <!-- Social button filling parent width and wrapping content height -->
+        <Button
+            android:id="@+id/socialButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Social"
+            />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

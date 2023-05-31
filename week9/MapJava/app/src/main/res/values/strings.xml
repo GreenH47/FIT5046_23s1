@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MapJava</string>
+    <string name="mapbox_access_token"> pk.eyJ1IjoiZ3JlZW5oIiwiYSI6ImNsOTZ4cXVqaDAzYTAzbnBkOHZrNGhscTYifQ.5CyI_nX9gcLhuYfYpgWC9w</string>
+</resources>

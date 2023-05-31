@@ -1,0 +1,33 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    // Set the repositories mode to fail on any declared project repositories
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        // Add the Google repository
+        google()
+        // Add the Maven Central repository
+        mavenCentral()
+        // Add the Mapbox repository with authentication and credentials
+        maven {
+            url 'https://api.mapbox.com/downloads/v2/releases/maven'
+            authentication {
+                basic(BasicAuthentication)
+            }
+            credentials {
+                // Do not change the username below. This should always be `mapbox` (not your username).
+                username = "mapbox"
+                // Use the secret token you stored in gradle.properties as the password
+                password = MAPBOX_DOWNLOADS_TOKEN
+            }
+        }
+    }
+}
+
+rootProject.name = "MapJava"
+include ':app'
